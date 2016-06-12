@@ -17,11 +17,17 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    packagingOptions {
+        exclude 'META-INF/maven/net.objecthunter/exp4j/pom.xml'
+        exclude 'META-INF/maven/net.objecthunter/exp4j/pom.properties'
+    }
+
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.android.support:appcompat-v7:23.4.0'
     compile files("libs/exp4j-0.4.5.jar");
 }
 repositories{
@@ -30,4 +36,5 @@ repositories{
 dependencies{
     compile'de.congrace:exp4j:0.4.5'
 }
+
 
