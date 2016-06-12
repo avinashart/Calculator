@@ -426,6 +426,7 @@ public class MainActivity extends AppCompatActivity {
                 bottomDisplay.setText(Double.toString(result));
 
             }else {
+
                 bottomDisplay.setText("SYNTAX ERROR!");
             }
         } catch (Exception e) {
